@@ -1,36 +1,52 @@
-# DE_Project_3
+# NLP Data Analysis and Processing
 
-# Project 03
+## Problem Statement
 
-**Problem**: Leader team AI xử lý ngôn ngữ tự nhiên NLP có yêu cầu phân tích cơ bản vài file dữ liệu để team NLP có đánh giá sơ bộ trước khi process tiếp. Tuy nhiên với lý do bảo mật file cần được xử lý và thống kê trên server và chưa có cài đặt Python, cần nhờ Data Engineer support
+The AI Natural Language Processing (NLP) team has requested a basic analysis of some data files to provide preliminary insights before further processing. However, due to security reasons, the files need to be processed and analyzed on a server where Python isn't installed. Therefore, Data Engineer support is required to fulfill this task.
 
-**Yêu cầu**:
+## Requirements
 
-- Dữ liệu mẫu: [https://www.gutenberg.org/files/74/74-0.txt](https://www.gutenberg.org/files/74/74-0.txt) & [http://www.smiffy.de/dbkda-2017/city.csv](http://www.smiffy.de/dbkda-2017/city.csv)
-- Phân tích:
-    - Book The Adventures of Tom Sawyer
-        1. How many chapters has the book?
-        2. Count the number of empty lines
-        3. How often does the names "Tom" and "Huck" appears in the book?
-        4. How often do they appear together in one line?
-        5. Go to line 1234 of the file. What is the third word?
-        6. Count the words and lines in the book
-        7. Translate all words of the book into lowercase
-        8. Count, how often each word in this book appears
-        9. Order the result, starting with the word with the highest frequency. Which word is it?
-        10. Write all the above steps (7,8,9) in one statement (using pipes)
-        11. Compare the result with the result from the following book: [http://www.gutenberg.org/files/2701/2701-0.txt](http://www.gutenberg.org/files/2701/2701-0.txt) 
-        
-        Compare the 20 most frequent words of each book. How many are in common?
-        
-    - File city.csv
-        1. Create a working copy of your file city.csv (for security reasons)
-        2. Exchange in the file all occurences of the Province "Amazonas" in Peru (Code PE)
-        with "Province of Amazonas"
-        3. Print all cities which have no population given.
-        4. Print the line numbers of the cities in Great Britain (Code: GB)
-        5. Delete the records 5-12 and 31-34 from city.csv and store the result in city.2.csv
-        6. Combine the used commands from the last two tasks and write a bash-script
-        (sequence of commands), which delete all british cities from the file city.csv
+### Data Samples
+- Book Text: [Link to Book Text](https://www.gutenberg.org/files/74/74-0.txt)
+- City Data: [Link to City Data](http://www.smiffy.de/dbkda-2017/city.csv)
 
-Kết quả: Gửi lại file [result.sh](http://result.sh) cho tất cả các tác vụ trên
+### Analysis
+
+#### Book: The Adventures of Tom Sawyer
+1. How many chapters does the book have?
+2. Count the number of empty lines.
+3. How often do the names "Tom" and "Huck" appear in the book?
+4. How often do they appear together in one line?
+5. What is the third word on line 1234?
+6. Count the words and lines in the book.
+7. Translate all words in the book to lowercase.
+8. Count the frequency of each word in the book.
+9. Order the words by frequency, starting with the highest.
+10. Combine the steps 7, 8, and 9 using pipes.
+11. Compare the results with another book: [Link to Another Book](http://www.gutenberg.org/files/2701/2701-0.txt)
+12. Compare the 20 most frequent words in each book. How many are in common?
+
+#### City Data
+1. Create a working copy of the city data file for security.
+2. Replace occurrences of "Amazonas" in Peru with "Province of Amazonas".
+3. Print cities without population data.
+4. Print line numbers of cities in Great Britain.
+5. Delete records 5-12 and 31-34 from the city data.
+6. Write a script that combines the commands from tasks 4 and 5 to delete British cities.
+
+## Usage
+
+To use the provided bash script for data analysis and processing, follow these steps:
+
+1. Clone the repository: `git clone https://github.com/your-username/nlp-data-analysis.git`
+2. Navigate to the repository directory: `cd nlp-data-analysis`
+3. Run the script: `./result.sh`
+
+## Notes
+
+- The script performs various analyses on the provided data samples using bash commands.
+- Ensure the security and permissions of the processed files are maintained.
+- The script is designed for a specific use case and may need adjustments for different datasets.
+- This repository is created for demonstration purposes and may require further validation for production use.
+
+Feel free to explore, modify, and use the provided script according to your needs.
