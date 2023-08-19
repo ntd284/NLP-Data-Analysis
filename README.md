@@ -38,15 +38,4 @@ The AI Natural Language Processing (NLP) team has requested a basic analysis of 
 
 To use the provided bash script for data analysis and processing, follow these steps:
 
-1. Clone the repository: `git clone https://github.com/your-username/nlp-data-analysis.git`
-2. Navigate to the repository directory: `cd nlp-data-analysis`
-3. Run the script: `./result.sh`
-
-## Notes
-
-- The script performs various analyses on the provided data samples using bash commands.
-- Ensure the security and permissions of the processed files are maintained.
-- The script is designed for a specific use case and may need adjustments for different datasets.
-- This repository is created for demonstration purposes and may require further validation for production use.
-
-Feel free to explore, modify, and use the provided script according to your needs.
+Run the script: `./Src/result.sh`
